@@ -7,6 +7,9 @@
 //
 
 #import "MainViewController.h"
+#import "AppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
+
 
 
 @interface MainViewController ()
@@ -23,6 +26,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
     //todo: send browser to the login page with creds...what is this?
     NSURL *url = [NSURL URLWithString:@"http://empty-dusk-3091.herokuapp.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

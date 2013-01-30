@@ -19,6 +19,7 @@ CLLocationManagerDelegate>{
     CLLocationDegrees lat;
     CLLocationDegrees lon;
     NSURLConnection* kapsuleConnection;
+    NSURLConnection* kapsuleLoginConnection;
     NSMutableData* receivedData;
     CLLocationManager *locationManager;
     CLLocation *lastUpdateLocation;
@@ -32,9 +33,11 @@ CLLocationManagerDelegate>{
 
 @property (nonatomic, retain) NSString *kapsule_token;
 @property (nonatomic, retain) NSString *FBID;
+@property (nonatomic,retain) NSString  *FB_token;
 
 
 -(void) doFacebookLogin;
+-(void) doKapsuleLogin;
 - (void)openSession;
 - (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI;
 

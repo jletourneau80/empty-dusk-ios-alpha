@@ -19,6 +19,7 @@
 @synthesize didNotifyUserOfNewInfo;
 @synthesize FBID;
 @synthesize kapsule_token;
+@synthesize FB_token;
 static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
 
 //static NSString* apiUrl = @"http://127.0.0.1:3000";
@@ -74,11 +75,38 @@ static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
 {
     switch (state) {
         case FBSessionStateOpen: {
+            [FBSession openActiveSessionWithPermissions:nil allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+                if(error) {
+                    NSLog(@"Error opening session: %@", error);
+                    return;
+                }
+                
+                if(session.isOpen) {
+                    FBRequest *me = [FBRequest requestForMe];
+                    [me startWithCompletionHandler:^(FBRequestConnection *connection,
+                                                     id result,
+                                                     NSError *error) {
+                        NSDictionary<FBGraphUser> *my = (NSDictionary<FBGraphUser> *) result;
+                       
+                        FBID = my.id;
+                        FB_token = [FBSession.activeSession accessToken];
+                        
+                        //todo: make the kapsule token request and then open the webview to url with that token and start the
+                        // location services...
+                        [self doKapsuleLogin];
+                        
+                    }];
+                }
+                
+            }];
+            
             UIViewController *topViewController =
             [self.navController topViewController];
             if ([[topViewController modalViewController]
                  isKindOfClass:[LoginViewController class]]) {
                 [topViewController dismissModalViewControllerAnimated:YES];
+                
+                
             }
         }
             break;
@@ -174,7 +202,44 @@ static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
     
 }
 
+- (void)doKapsuleLogin
+{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://empty-dusk-3091.herokuapp.com/api/v1/tokens.json"]];
+    
+    NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                   [self FBID], @"facebook_id",
+                                                   [self FB_token],  @"facebook_auth_token", nil];
+    
+   
 
+    NSString *postData = [self encodeDictionary:params];
+    
+    
+    // Create the request
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:[NSString stringWithFormat:@"%d", postData.length] forHTTPHeaderField:@"Content-Length"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:[postData dataUsingEncoding:NSUTF8StringEncoding]];
+
+    if (request) {
+        [request setURL:url];
+        kapsuleLoginConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    }
+}
+
+-(NSString*)encodeDictionary:(NSDictionary*)dictionary {
+    NSMutableArray *parts = [[NSMutableArray alloc] init];
+    for (NSString *key in dictionary) {
+        NSString *encodedValue = [[dictionary objectForKey:key] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *encodedKey = [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *part = [NSString stringWithFormat: @"%@=%@", encodedKey, encodedValue];
+        [parts addObject:part];
+    }
+    NSString *encodedDictionary = [parts componentsJoinedByString:@"&"];
+     NSLog(@"%@",encodedDictionary);
+    return encodedDictionary;
+}
 
 - (void)getKapsules: (CLLocationDegrees) latitude :(CLLocationDegrees) longitude{
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://empty-dusk-3091.herokuapp.com/kapsule_messages/find.json?lat=%f&lon=%f&auth_token=%@",latitude,longitude,kapsule_token]];
@@ -216,6 +281,21 @@ didReceiveResponse:(NSURLResponse*)response;
     //  NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:
     //                        delegate.FBID, @"facebook_id",[defaults objectForKey:@"FBAccessTokenKey"],  @"facebook_auth_token", nil];
     //[[RKClient sharedClient] post:@"/api/v1/tokens.json" params:params delegate:self];
+    if (connection==kapsuleLoginConnection){
+        //get the kapsule token!
+        id jsonObjects = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingMutableContainers error:nil];
+        
+        NSArray *keys = [jsonObjects allKeys];
+        
+        // values in foreach loop
+        for (NSString *key in keys) {
+            NSLog(@"%@ is %@",key, [jsonObjects objectForKey:key]);
+        }
+        
+    }
+    
+
+
     
     
     if (connection==kapsuleConnection){
