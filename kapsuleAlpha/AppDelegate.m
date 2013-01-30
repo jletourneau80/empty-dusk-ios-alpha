@@ -100,14 +100,7 @@ static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
                 
             }];
             
-            UIViewController *topViewController =
-            [self.navController topViewController];
-            if ([[topViewController modalViewController]
-                 isKindOfClass:[LoginViewController class]]) {
-                [topViewController dismissModalViewControllerAnimated:YES];
-                
-                
-            }
+            
         }
             break;
         case FBSessionStateClosed:
@@ -170,26 +163,31 @@ static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
 {
     //check to see if the distance since last update passes a threshhold...then update...
     
-    NSLog([NSString stringWithFormat:@"/kapsule_messages/find.json?lat=%f&lon=%f",newLocation.coordinate.latitude,newLocation.coordinate.longitude]);
+    //NSLog([NSString stringWithFormat:@"/kapsule_messages/find.json?lat=%f&lon=%f",newLocation.coordinate.latitude,newLocation.coordinate.longitude]);
     
     
     
     if (lastUpdateLocation==nil && kapsule_token!=nil){
         lastUpdateLocation = newLocation;
         //do restful find call...if has data...tell about it
-        [self getKapsules:newLocation.coordinate.latitude :newLocation.coordinate.longitude];
+        if (kapsuleConnection.currentRequest==nil){
+            [self getKapsules:newLocation.coordinate.latitude :newLocation.coordinate.longitude];
+        }
         
     }else if (kapsule_token!=nil){
         if ([lastUpdateLocation distanceFromLocation:newLocation] > 1000 || isAppInBackGround == true){ //just for test the background
             lastUpdateLocation = newLocation;
-            
-            [self getKapsules:newLocation.coordinate.latitude :newLocation.coordinate.longitude];
+            if (kapsuleConnection.currentRequest==nil){
+                [self getKapsules:newLocation.coordinate.latitude :newLocation.coordinate.longitude];
+            }
             
         }else{
             //TODO: JUST FOR TESTING UPDATE EVERY TIME
             
+           
             
-            [self getKapsules:newLocation.coordinate.latitude :newLocation.coordinate.longitude];
+                [self getKapsules:newLocation.coordinate.latitude :newLocation.coordinate.longitude];
+           
             
             
         }
@@ -291,23 +289,39 @@ didReceiveResponse:(NSURLResponse*)response;
         for (NSString *key in keys) {
             NSLog(@"%@ is %@",key, [jsonObjects objectForKey:key]);
         }
-        
+        kapsule_token = [jsonObjects objectForKey:@"token"];
+
+        //got the token...now show the other view
+        UIViewController *topViewController =
+                [self.navController topViewController];
+        if ([[topViewController modalViewController]
+             isKindOfClass:[LoginViewController class]]) {
+            [topViewController dismissModalViewControllerAnimated:YES];
+        }
+
+        //regardless...start the location monitoring
+        [self setUpLocationManager];
+
+
+
     }
-    
 
 
-    
-    
+
+
+
     if (connection==kapsuleConnection){
         NSString* s = [[NSString alloc] initWithData:receivedData encoding:NSASCIIStringEncoding];
-        NSLog(@"Received data %@", s);
+
         
         
-        NSArray *resultData = [NSJSONSerialization JSONObjectWithData:receivedData
-                                                              options:kNilOptions
-                                                                error:nil];
+        id jsonObjects = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingMutableContainers error:nil];
         
-        if (resultData.count > 0 && didNotifyUserOfNewInfo){
+        NSArray *kapsules = [jsonObjects objectForKey:@"kapsules_new"];
+        NSLog(@"New kapsules:%d", kapsules.count);
+       
+        
+        if (kapsules.count > 0 && !didNotifyUserOfNewInfo){
             NSDate *alertTime = [[NSDate date] dateByAddingTimeInterval:1];
             UIApplication* app = [UIApplication sharedApplication];
             UILocalNotification* notifyAlarm = [[UILocalNotification alloc] init];
@@ -317,9 +331,9 @@ didReceiveResponse:(NSURLResponse*)response;
                 notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
                 notifyAlarm.repeatInterval = 0;
                 notifyAlarm.alertBody = @"You've got some new Kapsules!";
-                notifyAlarm.applicationIconBadgeNumber = resultData.count;
-                [[UIApplication sharedApplication] setApplicationIconBadgeNumber:resultData.count];
-                NSLog(@"New kapsules:%@", resultData.count);
+                notifyAlarm.applicationIconBadgeNumber = kapsules.count;
+                [[UIApplication sharedApplication] setApplicationIconBadgeNumber:kapsules.count];
+                
                 [app scheduleLocalNotification:notifyAlarm];
             }
             didNotifyUserOfNewInfo=true;
