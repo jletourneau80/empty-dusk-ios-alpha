@@ -301,6 +301,7 @@ didReceiveResponse:(NSURLResponse*)response;
 
         //regardless...start the location monitoring
         [self setUpLocationManager];
+        [[self mainViewController] showKapsulePage];
 
 
 

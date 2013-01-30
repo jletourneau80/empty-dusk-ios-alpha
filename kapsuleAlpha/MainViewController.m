@@ -26,16 +26,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+       
+}
+
+-(void)showKapsulePage{
+    AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
     
+    NSLog(@"@%",[NSString stringWithFormat:@"http://empty-dusk-3091.herokuapp.com/kapsule_messages.mobile?auth_token=%@",[appDelegate kapsule_token]]);
     
-    //todo: send browser to the login page with creds...what is this?
-    NSURL *url = [NSURL URLWithString:@"http://empty-dusk-3091.herokuapp.com"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://empty-dusk-3091.herokuapp.com/kapsule_messages.mobile?auth_token=%@",[appDelegate kapsule_token]]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView setScalesPageToFit:YES];
     [webView loadRequest:request];
-    
-}
 
+}
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
