@@ -31,6 +31,7 @@ static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
     UIStoryboard*  sb = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone"
                                                   bundle:nil];
     self.mainViewController = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
+
     self.navController = [[UINavigationController alloc]
                           initWithRootViewController:self.mainViewController];
     self.window.rootViewController = self.navController;
@@ -151,9 +152,8 @@ static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
 - (void)setUpLocationManager{
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
-    locationManager.distanceFilter = kCLDistanceFilterNone; // whenever we move
     locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
-    [locationManager startUpdatingLocation];
+    [locationManager startMonitoringSignificantLocationChanges];
     
 }
 
@@ -170,16 +170,16 @@ static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
     if (lastUpdateLocation==nil && kapsule_token!=nil){
         lastUpdateLocation = newLocation;
         //do restful find call...if has data...tell about it
-        if (kapsuleConnection.currentRequest==nil){
+        
             [self getKapsules:newLocation.coordinate.latitude :newLocation.coordinate.longitude];
-        }
+        
         
     }else if (kapsule_token!=nil){
         if ([lastUpdateLocation distanceFromLocation:newLocation] > 1000 || isAppInBackGround == true){ //just for test the background
             lastUpdateLocation = newLocation;
-            if (kapsuleConnection.currentRequest==nil){
+          
                 [self getKapsules:newLocation.coordinate.latitude :newLocation.coordinate.longitude];
-            }
+          
             
         }else{
             //TODO: JUST FOR TESTING UPDATE EVERY TIME
@@ -328,8 +328,7 @@ didReceiveResponse:(NSURLResponse*)response;
             UILocalNotification* notifyAlarm = [[UILocalNotification alloc] init];
             if (notifyAlarm)
             {
-                notifyAlarm.fireDate = alertTime;
-                notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
+                notifyAlarm.fireDate = nil; //fire immediately
                 notifyAlarm.repeatInterval = 0;
                 notifyAlarm.alertBody = @"You've got some new Kapsules!";
                 notifyAlarm.applicationIconBadgeNumber = kapsules.count;
@@ -395,6 +394,11 @@ didReceiveResponse:(NSURLResponse*)response;
     didNotifyUserOfNewInfo = false;
     
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    
+    
+    if ([self kapsule_token]!=nil){
+       [[self mainViewController] showKapsulePage];
+    }
     
 }
 

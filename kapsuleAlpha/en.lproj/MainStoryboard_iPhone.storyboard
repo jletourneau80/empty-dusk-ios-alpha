@@ -12,30 +12,43 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktp-GL-8Ov">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktp-GL-8Ov">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="162" id="VAN-dA-Z6W"/>
+                                    <constraint firstAttribute="width" constant="228" id="AUK-gG-xlU"/>
+                                    <constraint firstAttribute="height" constant="44" id="RJ7-ZC-dqo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" image="fb_login_connect.jpeg">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="performLogin:" destination="IYZ-Ul-Kiz" eventType="touchUpInside" id="D5N-Ua-Amg"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RfJ-OB-X2u"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RfJ-OB-X2u"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="location_icon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="I3j-Xl-Yz2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="FWm-qF-39e"/>
+                                    <constraint firstAttribute="width" constant="165" id="hOk-uZ-Jvh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kapsule Mobile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFz-3Z-jzc">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RfJ-OB-X2u" firstAttribute="centerX" secondItem="ktp-GL-8Ov" secondAttribute="centerX" type="default" id="Bvl-8g-91a"/>
-                            <constraint firstItem="ktp-GL-8Ov" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="183" id="V43-7y-3JG"/>
-                            <constraint firstItem="RfJ-OB-X2u" firstAttribute="centerX" secondItem="CQm-kl-Qjx" secondAttribute="centerX" type="default" id="nea-0w-zfo"/>
-                            <constraint firstAttribute="bottom" secondItem="RfJ-OB-X2u" secondAttribute="bottom" constant="253" id="pdI-Mj-AeQ"/>
+                            <constraint firstItem="I3j-Xl-Yz2" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="57" id="EVr-eH-Hh1"/>
+                            <constraint firstItem="ktp-GL-8Ov" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="246" id="MQu-7K-cbd"/>
+                            <constraint firstAttribute="bottom" secondItem="RfJ-OB-X2u" secondAttribute="bottom" constant="155" id="McW-fJ-vwc"/>
+                            <constraint firstItem="NFz-3Z-jzc" firstAttribute="centerX" secondItem="I3j-Xl-Yz2" secondAttribute="centerX" type="default" id="NVz-ZY-5mZ"/>
+                            <constraint firstItem="ktp-GL-8Ov" firstAttribute="centerX" secondItem="CQm-kl-Qjx" secondAttribute="centerX" type="default" id="Tg1-z2-GMg"/>
+                            <constraint firstItem="I3j-Xl-Yz2" firstAttribute="centerX" secondItem="ktp-GL-8Ov" secondAttribute="centerX" type="default" id="hmg-xH-X5I"/>
+                            <constraint firstItem="NFz-3Z-jzc" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="20" symbolic="YES" type="default" id="jFS-w3-riG"/>
+                            <constraint firstItem="ktp-GL-8Ov" firstAttribute="centerX" secondItem="RfJ-OB-X2u" secondAttribute="centerX" type="default" id="o6x-zV-P59"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,6 +91,28 @@
             <point key="canvasLocation" x="692" y="108"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fb_login_connect.jpeg" width="224" height="37"/>
+        <image name="location_icon.jpeg" width="204" height="204"/>
+    </resources>
+    <classes>
+        <class className="LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="performLogin:"/>
+                <relationship kind="outlet" name="spinner" candidateClass="UIActivityIndicatorView"/>
+            </relationships>
+        </class>
+        <class className="MainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
