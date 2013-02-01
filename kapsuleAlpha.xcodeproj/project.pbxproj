@@ -443,7 +443,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason Letourneau (F46775L8R2)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -453,6 +453,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = kapsuleAlpha;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "238E5969-1F30-4691-8DE9-B89BF87D5D68";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -478,6 +479,7 @@
 		42AF26AB16B9928F0072937A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason Letourneau (F46775L8R2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
@@ -487,6 +489,7 @@
 				INFOPLIST_FILE = "kapsuleAlpha/kapsuleAlpha-Info.plist";
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "238E5969-1F30-4691-8DE9-B89BF87D5D68";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -544,6 +547,7 @@
 				42AF26AB16B9928F0072937A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42AF26AC16B9928F0072937A /* Build configuration list for PBXNativeTarget "kapsuleAlphaTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +556,7 @@
 				42AF26AE16B9928F0072937A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
