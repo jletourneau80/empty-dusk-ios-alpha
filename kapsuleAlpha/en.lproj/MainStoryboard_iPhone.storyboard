@@ -41,13 +41,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RfJ-OB-X2u" secondAttribute="bottom" constant="67" id="5Ey-aN-gMJ"/>
                             <constraint firstItem="I3j-Xl-Yz2" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="57" id="EVr-eH-Hh1"/>
                             <constraint firstItem="ktp-GL-8Ov" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="246" id="MQu-7K-cbd"/>
-                            <constraint firstAttribute="bottom" secondItem="RfJ-OB-X2u" secondAttribute="bottom" constant="155" id="McW-fJ-vwc"/>
                             <constraint firstItem="NFz-3Z-jzc" firstAttribute="centerX" secondItem="I3j-Xl-Yz2" secondAttribute="centerX" type="default" id="NVz-ZY-5mZ"/>
-                            <constraint firstItem="ktp-GL-8Ov" firstAttribute="centerX" secondItem="CQm-kl-Qjx" secondAttribute="centerX" type="default" id="Tg1-z2-GMg"/>
                             <constraint firstItem="I3j-Xl-Yz2" firstAttribute="centerX" secondItem="ktp-GL-8Ov" secondAttribute="centerX" type="default" id="hmg-xH-X5I"/>
                             <constraint firstItem="NFz-3Z-jzc" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="20" symbolic="YES" type="default" id="jFS-w3-riG"/>
+                            <constraint firstItem="RfJ-OB-X2u" firstAttribute="centerX" secondItem="CQm-kl-Qjx" secondAttribute="centerX" type="default" id="kT2-ET-CeD"/>
                             <constraint firstItem="ktp-GL-8Ov" firstAttribute="centerX" secondItem="RfJ-OB-X2u" secondAttribute="centerX" type="default" id="o6x-zV-P59"/>
                         </constraints>
                     </view>

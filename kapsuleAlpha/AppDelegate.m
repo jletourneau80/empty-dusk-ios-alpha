@@ -20,7 +20,7 @@
 @synthesize FBID;
 @synthesize kapsule_token;
 @synthesize FB_token;
-static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
+
 
 //static NSString* apiUrl = @"http://127.0.0.1:3000";
 
@@ -37,13 +37,7 @@ static NSString* apiUrl = @"http://empty-dusk-3091.herokuapp.com";
     self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
     
-    if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
-        // Yes, so just open the session (this won't display any UX).
-        [self openSession];
-    } else {
-        // No, display the login page.
-        [self showLoginView];
-    }
+    [self doFacebookLogin];
     
     return YES;
 }
@@ -398,12 +392,27 @@ didReceiveResponse:(NSURLResponse*)response;
     
     if ([self kapsule_token]!=nil){
        [[self mainViewController] showKapsulePage];
+    }else{
+        [self doFacebookLogin];
     }
+
     
+}
+
+-(void) doFacebookLogin{
+    if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
+        // Yes, so just open the session (this won't display any UX).
+        [self openSession];
+    } else {
+        // No, display the login page.
+        [self showLoginView];
+    }
 }
 
 
 - (void)dealloc {
+    [locationManager stopUpdatingLocation];
+    locationManager = nil;
     
 }
 
@@ -418,5 +427,8 @@ didReceiveResponse:(NSURLResponse*)response;
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
 
 @end

@@ -39,6 +39,7 @@ CLLocationManagerDelegate>{
 -(void) doFacebookLogin;
 -(void) doKapsuleLogin;
 - (void)openSession;
+-(void) showLoginView;
 - (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI;
 
 
