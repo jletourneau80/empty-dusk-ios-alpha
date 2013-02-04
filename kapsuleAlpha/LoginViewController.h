@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 
 @interface LoginViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *StatusLabel;
 
 - (IBAction)performLogin:(id)sender;
 

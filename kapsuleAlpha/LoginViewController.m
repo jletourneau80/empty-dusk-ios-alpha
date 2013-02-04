@@ -21,7 +21,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+    self.spinner.hidden=YES;
     }
     return self;
 }
@@ -50,6 +50,10 @@
     [self.spinner startAnimating];
     
     AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    self.spinner.hidden=NO;
+    
+
+    
     [appDelegate openSession];
 }
 @end

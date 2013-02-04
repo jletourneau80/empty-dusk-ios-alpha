@@ -76,6 +76,8 @@
                     return;
                 }
                 
+                
+                
                 if(session.isOpen) {
                     FBRequest *me = [FBRequest requestForMe];
                     [me startWithCompletionHandler:^(FBRequestConnection *connection,

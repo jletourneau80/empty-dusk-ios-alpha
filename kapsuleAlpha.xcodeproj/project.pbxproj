@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4204DAAF16C04D6B00CA32B9 /* kapsule_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4204DAAD16C04D6B00CA32B9 /* kapsule_background.png */; };
+		4204DAB016C04D6B00CA32B9 /* kapsule_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4204DAAE16C04D6B00CA32B9 /* kapsule_logo.png */; };
 		42AF267216B9928F0072937A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AF267116B9928F0072937A /* UIKit.framework */; };
 		42AF267416B9928F0072937A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AF267316B9928F0072937A /* Foundation.framework */; };
 		42AF267616B9928F0072937A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AF267516B9928F0072937A /* CoreGraphics.framework */; };
@@ -32,10 +34,8 @@
 		42AF26C216B9944A0072937A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AF26BF16B9944A0072937A /* Social.framework */; };
 		42AF26C416B995EE0072937A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AF26C316B995EE0072937A /* CoreLocation.framework */; };
 		42AF26CA16B99CDF0072937A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AF26C816B99CDF0072937A /* MainViewController.m */; };
-		42AF26CD16BA0A380072937A /* kapsule_logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42AF26CC16BA0A380072937A /* kapsule_logo.jpeg */; };
 		42AF26CF16BA0AB20072937A /* location_icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42AF26CE16BA0AB20072937A /* location_icon.jpeg */; };
 		42AF26D116BA0D0B0072937A /* fb_login_connect.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42AF26D016BA0D0B0072937A /* fb_login_connect.jpeg */; };
-		42AF26D416BA0F2D0072937A /* star_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AF26D216BA0F2D0072937A /* star_logo.jpg */; };
 		42AF26D516BA0F2D0072937A /* star_logo@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AF26D316BA0F2D0072937A /* star_logo@2x.jpg */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4204DAAD16C04D6B00CA32B9 /* kapsule_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kapsule_background.png; sourceTree = "<group>"; };
+		4204DAAE16C04D6B00CA32B9 /* kapsule_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kapsule_logo.png; sourceTree = "<group>"; };
 		42AF266E16B9928F0072937A /* kapsuleAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kapsuleAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AF267116B9928F0072937A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42AF267316B9928F0072937A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,10 +84,8 @@
 		42AF26C316B995EE0072937A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		42AF26C716B99CDF0072937A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		42AF26C816B99CDF0072937A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		42AF26CC16BA0A380072937A /* kapsule_logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kapsule_logo.jpeg; sourceTree = "<group>"; };
 		42AF26CE16BA0AB20072937A /* location_icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = location_icon.jpeg; sourceTree = "<group>"; };
 		42AF26D016BA0D0B0072937A /* fb_login_connect.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fb_login_connect.jpeg; sourceTree = "<group>"; };
-		42AF26D216BA0F2D0072937A /* star_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star_logo.jpg; sourceTree = "<group>"; };
 		42AF26D316BA0F2D0072937A /* star_logo@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "star_logo@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,11 +173,11 @@
 		42AF267816B9928F0072937A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				42AF26D216BA0F2D0072937A /* star_logo.jpg */,
+				4204DAAD16C04D6B00CA32B9 /* kapsule_background.png */,
+				4204DAAE16C04D6B00CA32B9 /* kapsule_logo.png */,
 				42AF26D316BA0F2D0072937A /* star_logo@2x.jpg */,
 				42AF26D016BA0D0B0072937A /* fb_login_connect.jpeg */,
 				42AF26CE16BA0AB20072937A /* location_icon.jpeg */,
-				42AF26CC16BA0A380072937A /* kapsule_logo.jpeg */,
 				42AF267916B9928F0072937A /* kapsuleAlpha-Info.plist */,
 				42AF267A16B9928F0072937A /* InfoPlist.strings */,
 				42AF267D16B9928F0072937A /* main.m */,
@@ -297,11 +297,11 @@
 				42AF268E16B9928F0072937A /* MainStoryboard_iPad.storyboard in Resources */,
 				42AF26BA16B994120072937A /* FacebookSDKResources.bundle in Resources */,
 				42AF26BB16B994120072937A /* FBUserSettingsViewResources.bundle in Resources */,
-				42AF26CD16BA0A380072937A /* kapsule_logo.jpeg in Resources */,
 				42AF26CF16BA0AB20072937A /* location_icon.jpeg in Resources */,
 				42AF26D116BA0D0B0072937A /* fb_login_connect.jpeg in Resources */,
-				42AF26D416BA0F2D0072937A /* star_logo.jpg in Resources */,
 				42AF26D516BA0F2D0072937A /* star_logo@2x.jpg in Resources */,
+				4204DAAF16C04D6B00CA32B9 /* kapsule_background.png in Resources */,
+				4204DAB016C04D6B00CA32B9 /* kapsule_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

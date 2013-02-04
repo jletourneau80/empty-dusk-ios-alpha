@@ -12,10 +12,12 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktp-GL-8Ov">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RfJ-OB-X2u"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kapsule_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="I3j-Xl-Yz2"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buf-5j-rmL">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="228" id="AUK-gG-xlU"/>
-                                    <constraint firstAttribute="height" constant="44" id="RJ7-ZC-dqo"/>
+                                    <constraint firstAttribute="height" constant="44" id="HBm-Ym-9Iu"/>
+                                    <constraint firstAttribute="width" constant="228" id="qtR-9J-9p0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal" image="fb_login_connect.jpeg">
@@ -23,32 +25,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="performLogin:" destination="IYZ-Ul-Kiz" eventType="touchUpInside" id="D5N-Ua-Amg"/>
+                                    <action selector="performLogin:" destination="IYZ-Ul-Kiz" eventType="touchUpInside" id="jFc-Zw-fDY"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="RfJ-OB-X2u"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="location_icon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="I3j-Xl-Yz2">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="141" id="FWm-qF-39e"/>
-                                    <constraint firstAttribute="width" constant="165" id="hOk-uZ-Jvh"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kapsule Mobile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFz-3Z-jzc">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="RfJ-OB-X2u" secondAttribute="bottom" constant="67" id="5Ey-aN-gMJ"/>
-                            <constraint firstItem="I3j-Xl-Yz2" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="57" id="EVr-eH-Hh1"/>
-                            <constraint firstItem="ktp-GL-8Ov" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="246" id="MQu-7K-cbd"/>
-                            <constraint firstItem="NFz-3Z-jzc" firstAttribute="centerX" secondItem="I3j-Xl-Yz2" secondAttribute="centerX" type="default" id="NVz-ZY-5mZ"/>
-                            <constraint firstItem="I3j-Xl-Yz2" firstAttribute="centerX" secondItem="ktp-GL-8Ov" secondAttribute="centerX" type="default" id="hmg-xH-X5I"/>
-                            <constraint firstItem="NFz-3Z-jzc" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" constant="20" symbolic="YES" type="default" id="jFS-w3-riG"/>
-                            <constraint firstItem="RfJ-OB-X2u" firstAttribute="centerX" secondItem="CQm-kl-Qjx" secondAttribute="centerX" type="default" id="kT2-ET-CeD"/>
-                            <constraint firstItem="ktp-GL-8Ov" firstAttribute="centerX" secondItem="RfJ-OB-X2u" secondAttribute="centerX" type="default" id="o6x-zV-P59"/>
+                            <constraint firstItem="I3j-Xl-Yz2" firstAttribute="bottom" secondItem="CQm-kl-Qjx" secondAttribute="bottom" type="default" id="6K2-wQ-lMt"/>
+                            <constraint firstItem="I3j-Xl-Yz2" firstAttribute="leading" secondItem="CQm-kl-Qjx" secondAttribute="leading" type="default" id="JDv-VG-njF"/>
+                            <constraint firstItem="buf-5j-rmL" firstAttribute="top" secondItem="RfJ-OB-X2u" secondAttribute="top" type="default" id="LSE-kG-aGw"/>
+                            <constraint firstItem="I3j-Xl-Yz2" firstAttribute="top" secondItem="CQm-kl-Qjx" secondAttribute="top" type="default" id="nbW-kw-1Ze"/>
+                            <constraint firstItem="I3j-Xl-Yz2" firstAttribute="centerX" secondItem="buf-5j-rmL" secondAttribute="centerX" type="default" id="t3f-aZ-E6h"/>
+                            <constraint firstItem="buf-5j-rmL" firstAttribute="centerX" secondItem="RfJ-OB-X2u" secondAttribute="centerX" type="default" id="wZ8-cf-HNV"/>
+                            <constraint firstAttribute="bottom" secondItem="buf-5j-rmL" secondAttribute="bottom" constant="43" id="ytN-ov-MLn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -93,13 +82,14 @@
     </scenes>
     <resources>
         <image name="fb_login_connect.jpeg" width="224" height="37"/>
-        <image name="location_icon.jpeg" width="204" height="204"/>
+        <image name="kapsule_background.png" width="320" height="480"/>
     </resources>
     <classes>
         <class className="LoginViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
             <relationships>
                 <relationship kind="action" name="performLogin:"/>
+                <relationship kind="outlet" name="StatusLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="spinner" candidateClass="UIActivityIndicatorView"/>
             </relationships>
         </class>
