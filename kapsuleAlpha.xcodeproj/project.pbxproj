@@ -42,8 +42,6 @@
 		96BA863D172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8525172F3E73001E6542 /* Default@2x.png */; };
 		96BA863E172F3E74001E6542 /* FPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8526172F3E73001E6542 /* FPViewController_iPad.xib */; };
 		96BA863F172F3E74001E6542 /* FPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8528172F3E73001E6542 /* FPViewController_iPhone.xib */; };
-		96BA8640172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA852A172F3E73001E6542 /* InfoPlist.strings */; };
-		96BA8643172F3E74001E6542 /* FriendPickerSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8530172F3E73001E6542 /* FriendPickerSample-Info.plist */; };
 		96BA8644172F3E74001E6542 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8532172F3E73001E6542 /* Icon-72.png */; };
 		96BA8645172F3E74001E6542 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8533172F3E73001E6542 /* Icon-72@2x.png */; };
 		96BA8646172F3E74001E6542 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8534172F3E73001E6542 /* Icon.png */; };
@@ -54,8 +52,6 @@
 		96BA864C172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA853F172F3E73001E6542 /* Default@2x.png */; };
 		96BA864D172F3E74001E6542 /* GraphApiViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8540172F3E73001E6542 /* GraphApiViewController_iPad.xib */; };
 		96BA864E172F3E74001E6542 /* GraphApiViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8542172F3E73001E6542 /* GraphApiViewController_iPhone.xib */; };
-		96BA864F172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8544172F3E73001E6542 /* InfoPlist.strings */; };
-		96BA8651172F3E74001E6542 /* GraphApiSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8548172F3E73001E6542 /* GraphApiSample-Info.plist */; };
 		96BA8653172F3E74001E6542 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA854C172F3E73001E6542 /* Icon-72.png */; };
 		96BA8654172F3E74001E6542 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA854D172F3E73001E6542 /* Icon-72@2x.png */; };
 		96BA8655172F3E74001E6542 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA854E172F3E73001E6542 /* Icon.png */; };
@@ -66,8 +62,6 @@
 		96BA865B172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8559172F3E73001E6542 /* Default@2x.png */; };
 		96BA865C172F3E74001E6542 /* HFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA855A172F3E73001E6542 /* HFViewController_iPad.xib */; };
 		96BA865D172F3E74001E6542 /* HFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA855C172F3E73001E6542 /* HFViewController_iPhone.xib */; };
-		96BA865E172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA855E172F3E73001E6542 /* InfoPlist.strings */; };
-		96BA865F172F3E74001E6542 /* HelloFacebookSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8560172F3E73001E6542 /* HelloFacebookSample-Info.plist */; };
 		96BA8662172F3E74001E6542 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8566172F3E73001E6542 /* Icon-72.png */; };
 		96BA8663172F3E74001E6542 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8567172F3E73001E6542 /* Icon-72@2x.png */; };
 		96BA8664172F3E74001E6542 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8568172F3E73001E6542 /* Icon.png */; };
@@ -76,33 +70,28 @@
 		96BA8668172F3E74001E6542 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8571172F3E73001E6542 /* Default-568h@2x.png */; };
 		96BA8669172F3E74001E6542 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8572172F3E73001E6542 /* Default.png */; };
 		96BA866A172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8573172F3E73001E6542 /* Default@2x.png */; };
-		96BA866B172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8574172F3E73001E6542 /* InfoPlist.strings */; };
 		96BA866C172F3E74001E6542 /* PPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8576172F3E73001E6542 /* PPViewController_iPad.xib */; };
 		96BA866D172F3E74001E6542 /* PPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8578172F3E73001E6542 /* PPViewController_iPhone.xib */; };
 		96BA866E172F3E74001E6542 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA857A172F3E73001E6542 /* Icon-72.png */; };
 		96BA866F172F3E74001E6542 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA857B172F3E73001E6542 /* Icon-72@2x.png */; };
 		96BA8670172F3E74001E6542 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA857C172F3E73001E6542 /* Icon.png */; };
 		96BA8671172F3E74001E6542 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA857D172F3E73001E6542 /* Icon@2x.png */; };
-		96BA8673172F3E74001E6542 /* PlacePickerSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA857F172F3E73001E6542 /* PlacePickerSample-Info.plist */; };
 		96BA8676172F3E74001E6542 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8588172F3E73001E6542 /* ReadMe.txt */; };
 		96BA8677172F3E74001E6542 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA858B172F3E73001E6542 /* Default-568h@2x.png */; };
 		96BA8678172F3E74001E6542 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA858C172F3E73001E6542 /* Default.png */; };
 		96BA8679172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA858D172F3E73001E6542 /* Default@2x.png */; };
-		96BA867A172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA858E172F3E73001E6542 /* InfoPlist.strings */; };
 		96BA867B172F3E74001E6542 /* PPViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8590172F3E73001E6542 /* PPViewController_iPad.xib */; };
 		96BA867C172F3E74001E6542 /* PPViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8592172F3E73001E6542 /* PPViewController_iPhone.xib */; };
 		96BA867D172F3E74001E6542 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8594172F3E73001E6542 /* Icon-72.png */; };
 		96BA867E172F3E74001E6542 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8595172F3E73001E6542 /* Icon-72@2x.png */; };
 		96BA867F172F3E74001E6542 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8596172F3E73001E6542 /* Icon.png */; };
 		96BA8680172F3E74001E6542 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8597172F3E73001E6542 /* Icon@2x.png */; };
-		96BA8684172F3E74001E6542 /* ProfilePictureSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA859D172F3E73001E6542 /* ProfilePictureSample-Info.plist */; };
 		96BA8685172F3E74001E6542 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85A2172F3E74001E6542 /* ReadMe.txt */; };
 		96BA8686172F3E74001E6542 /* post_app_objects.sh in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85A4172F3E74001E6542 /* post_app_objects.sh */; };
 		96BA8687172F3E74001E6542 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85A5172F3E74001E6542 /* ReadMe.txt */; };
 		96BA8688172F3E74001E6542 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85A7172F3E74001E6542 /* Default-568h@2x.png */; };
 		96BA8689172F3E74001E6542 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85A8172F3E74001E6542 /* Default.png */; };
 		96BA868A172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85A9172F3E74001E6542 /* Default@2x.png */; };
-		96BA868B172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85AA172F3E74001E6542 /* InfoPlist.strings */; };
 		96BA868C172F3E74001E6542 /* RPSFriendsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85AC172F3E74001E6542 /* RPSFriendsViewController_iPad.xib */; };
 		96BA868D172F3E74001E6542 /* RPSFriendsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85AE172F3E74001E6542 /* RPSFriendsViewController_iPhone.xib */; };
 		96BA868E172F3E74001E6542 /* RPSGameViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85B0172F3E74001E6542 /* RPSGameViewController_iPad.xib */; };
@@ -124,7 +113,6 @@
 		96BA869F172F3E74001E6542 /* right-rock-88.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85C4172F3E74001E6542 /* right-rock-88.png */; };
 		96BA86A0172F3E74001E6542 /* right-scissors-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85C5172F3E74001E6542 /* right-scissors-128.png */; };
 		96BA86A1172F3E74001E6542 /* right-scissors-88.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85C6172F3E74001E6542 /* right-scissors-88.png */; };
-		96BA86A6172F3E74001E6542 /* RPSSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85CE172F3E74001E6542 /* RPSSample-Info.plist */; };
 		96BA86A7172F3E74001E6542 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85D4172F3E74001E6542 /* Icon-72.png */; };
 		96BA86A8172F3E74001E6542 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85D5172F3E74001E6542 /* Icon.png */; };
 		96BA86A9172F3E74001E6542 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85D6172F3E74001E6542 /* Icon@2x.png */; };
@@ -132,7 +120,6 @@
 		96BA86AB172F3E74001E6542 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85D9172F3E74001E6542 /* Default-568h@2x.png */; };
 		96BA86AC172F3E74001E6542 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85DA172F3E74001E6542 /* Default.png */; };
 		96BA86AD172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85DB172F3E74001E6542 /* Default@2x.png */; };
-		96BA86AE172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85DC172F3E74001E6542 /* InfoPlist.strings */; };
 		96BA86AF172F3E74001E6542 /* Scrumptious.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85DE172F3E74001E6542 /* Scrumptious.strings */; };
 		96BA86B0172F3E74001E6542 /* SCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85E0172F3E74001E6542 /* SCViewController.xib */; };
 		96BA86B1172F3E74001E6542 /* action-eating.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85E4172F3E74001E6542 /* action-eating.png */; };
@@ -142,24 +129,20 @@
 		96BA86B5172F3E74001E6542 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85E8172F3E74001E6542 /* facebook.png */; };
 		96BA86B9172F3E74001E6542 /* SCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85EE172F3E74001E6542 /* SCLoginViewController.xib */; };
 		96BA86BB172F3E74001E6542 /* SCPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85F1172F3E74001E6542 /* SCPhotoViewController.xib */; };
-		96BA86BC172F3E74001E6542 /* scrumptious-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85F3172F3E74001E6542 /* scrumptious-Info.plist */; };
 		96BA86BE172F3E74001E6542 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85FB172F3E74001E6542 /* ReadMe.txt */; };
 		96BA86BF172F3E74001E6542 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85FD172F3E74001E6542 /* Default-568h@2x.png */; };
 		96BA86C0172F3E74001E6542 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85FE172F3E74001E6542 /* Default.png */; };
 		96BA86C1172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA85FF172F3E74001E6542 /* Default@2x.png */; };
-		96BA86C2172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8600172F3E74001E6542 /* InfoPlist.strings */; };
 		96BA86C3172F3E74001E6542 /* SLViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8602172F3E74001E6542 /* SLViewController_iPad.xib */; };
 		96BA86C4172F3E74001E6542 /* SLViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8604172F3E74001E6542 /* SLViewController_iPhone.xib */; };
 		96BA86C5172F3E74001E6542 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8606172F3E74001E6542 /* Icon-72.png */; };
 		96BA86C6172F3E74001E6542 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8607172F3E74001E6542 /* Icon-72@2x.png */; };
 		96BA86C7172F3E74001E6542 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8608172F3E74001E6542 /* Icon.png */; };
 		96BA86C8172F3E74001E6542 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8609172F3E74001E6542 /* Icon@2x.png */; };
-		96BA86CA172F3E74001E6542 /* SessionLoginSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA860B172F3E74001E6542 /* SessionLoginSample-Info.plist */; };
 		96BA86CD172F3E74001E6542 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8615172F3E74001E6542 /* ReadMe.txt */; };
 		96BA86CE172F3E74001E6542 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8617172F3E74001E6542 /* Default-568h@2x.png */; };
 		96BA86CF172F3E74001E6542 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8618172F3E74001E6542 /* Default.png */; };
 		96BA86D0172F3E74001E6542 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8619172F3E74001E6542 /* Default@2x.png */; };
-		96BA86D1172F3E74001E6542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96BA861A172F3E74001E6542 /* InfoPlist.strings */; };
 		96BA86D2172F3E74001E6542 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA861C172F3E74001E6542 /* first.png */; };
 		96BA86D3172F3E74001E6542 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA861D172F3E74001E6542 /* first@2x.png */; };
 		96BA86D4172F3E74001E6542 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA861E172F3E74001E6542 /* Icon-72.png */; };
@@ -172,10 +155,8 @@
 		96BA86DF172F3E74001E6542 /* SUSettingsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA862C172F3E74001E6542 /* SUSettingsViewController_iPhone.xib */; };
 		96BA86E2172F3E74001E6542 /* SUUsingViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8631172F3E74001E6542 /* SUUsingViewController_iPad.xib */; };
 		96BA86E3172F3E74001E6542 /* SUUsingViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8632172F3E74001E6542 /* SUUsingViewController_iPhone.xib */; };
-		96BA86E4172F3E74001E6542 /* SwitchUserSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8633172F3E74001E6542 /* SwitchUserSample-Info.plist */; };
 		96BA870B172F3EA8001E6542 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8708172F3EA8001E6542 /* FacebookSDKResources.bundle */; };
 		96BA870C172F3EA8001E6542 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96BA8709172F3EA8001E6542 /* FBUserSettingsViewResources.bundle */; };
-		96BA870D172F3EA8001E6542 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96BA870A172F3EA8001E6542 /* Info.plist */; };
 		96BA870F172F3EE8001E6542 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA870E172F3EE8001E6542 /* libsqlite3.0.dylib */; };
 		96BA8711172F4010001E6542 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA8710172F4010001E6542 /* AddressBook.framework */; };
 		96BA8713172F4035001E6542 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA8712172F4035001E6542 /* Security.framework */; };
@@ -1311,8 +1292,6 @@
 				96BA863D172F3E74001E6542 /* Default@2x.png in Resources */,
 				96BA863E172F3E74001E6542 /* FPViewController_iPad.xib in Resources */,
 				96BA863F172F3E74001E6542 /* FPViewController_iPhone.xib in Resources */,
-				96BA8640172F3E74001E6542 /* InfoPlist.strings in Resources */,
-				96BA8643172F3E74001E6542 /* FriendPickerSample-Info.plist in Resources */,
 				96BA8644172F3E74001E6542 /* Icon-72.png in Resources */,
 				96BA8645172F3E74001E6542 /* Icon-72@2x.png in Resources */,
 				96BA8646172F3E74001E6542 /* Icon.png in Resources */,
@@ -1323,8 +1302,6 @@
 				96BA864C172F3E74001E6542 /* Default@2x.png in Resources */,
 				96BA864D172F3E74001E6542 /* GraphApiViewController_iPad.xib in Resources */,
 				96BA864E172F3E74001E6542 /* GraphApiViewController_iPhone.xib in Resources */,
-				96BA864F172F3E74001E6542 /* InfoPlist.strings in Resources */,
-				96BA8651172F3E74001E6542 /* GraphApiSample-Info.plist in Resources */,
 				96BA8653172F3E74001E6542 /* Icon-72.png in Resources */,
 				96BA8654172F3E74001E6542 /* Icon-72@2x.png in Resources */,
 				96BA8655172F3E74001E6542 /* Icon.png in Resources */,
@@ -1335,8 +1312,6 @@
 				96BA865B172F3E74001E6542 /* Default@2x.png in Resources */,
 				96BA865C172F3E74001E6542 /* HFViewController_iPad.xib in Resources */,
 				96BA865D172F3E74001E6542 /* HFViewController_iPhone.xib in Resources */,
-				96BA865E172F3E74001E6542 /* InfoPlist.strings in Resources */,
-				96BA865F172F3E74001E6542 /* HelloFacebookSample-Info.plist in Resources */,
 				96BA8662172F3E74001E6542 /* Icon-72.png in Resources */,
 				96BA8663172F3E74001E6542 /* Icon-72@2x.png in Resources */,
 				96BA8664172F3E74001E6542 /* Icon.png in Resources */,
@@ -1345,33 +1320,28 @@
 				96BA8668172F3E74001E6542 /* Default-568h@2x.png in Resources */,
 				96BA8669172F3E74001E6542 /* Default.png in Resources */,
 				96BA866A172F3E74001E6542 /* Default@2x.png in Resources */,
-				96BA866B172F3E74001E6542 /* InfoPlist.strings in Resources */,
 				96BA866C172F3E74001E6542 /* PPViewController_iPad.xib in Resources */,
 				96BA866D172F3E74001E6542 /* PPViewController_iPhone.xib in Resources */,
 				96BA866E172F3E74001E6542 /* Icon-72.png in Resources */,
 				96BA866F172F3E74001E6542 /* Icon-72@2x.png in Resources */,
 				96BA8670172F3E74001E6542 /* Icon.png in Resources */,
 				96BA8671172F3E74001E6542 /* Icon@2x.png in Resources */,
-				96BA8673172F3E74001E6542 /* PlacePickerSample-Info.plist in Resources */,
 				96BA8676172F3E74001E6542 /* ReadMe.txt in Resources */,
 				96BA8677172F3E74001E6542 /* Default-568h@2x.png in Resources */,
 				96BA8678172F3E74001E6542 /* Default.png in Resources */,
 				96BA8679172F3E74001E6542 /* Default@2x.png in Resources */,
-				96BA867A172F3E74001E6542 /* InfoPlist.strings in Resources */,
 				96BA867B172F3E74001E6542 /* PPViewController_iPad.xib in Resources */,
 				96BA867C172F3E74001E6542 /* PPViewController_iPhone.xib in Resources */,
 				96BA867D172F3E74001E6542 /* Icon-72.png in Resources */,
 				96BA867E172F3E74001E6542 /* Icon-72@2x.png in Resources */,
 				96BA867F172F3E74001E6542 /* Icon.png in Resources */,
 				96BA8680172F3E74001E6542 /* Icon@2x.png in Resources */,
-				96BA8684172F3E74001E6542 /* ProfilePictureSample-Info.plist in Resources */,
 				96BA8685172F3E74001E6542 /* ReadMe.txt in Resources */,
 				96BA8686172F3E74001E6542 /* post_app_objects.sh in Resources */,
 				96BA8687172F3E74001E6542 /* ReadMe.txt in Resources */,
 				96BA8688172F3E74001E6542 /* Default-568h@2x.png in Resources */,
 				96BA8689172F3E74001E6542 /* Default.png in Resources */,
 				96BA868A172F3E74001E6542 /* Default@2x.png in Resources */,
-				96BA868B172F3E74001E6542 /* InfoPlist.strings in Resources */,
 				96BA868C172F3E74001E6542 /* RPSFriendsViewController_iPad.xib in Resources */,
 				96BA868D172F3E74001E6542 /* RPSFriendsViewController_iPhone.xib in Resources */,
 				96BA868E172F3E74001E6542 /* RPSGameViewController_iPad.xib in Resources */,
@@ -1393,7 +1363,6 @@
 				96BA869F172F3E74001E6542 /* right-rock-88.png in Resources */,
 				96BA86A0172F3E74001E6542 /* right-scissors-128.png in Resources */,
 				96BA86A1172F3E74001E6542 /* right-scissors-88.png in Resources */,
-				96BA86A6172F3E74001E6542 /* RPSSample-Info.plist in Resources */,
 				96BA86A7172F3E74001E6542 /* Icon-72.png in Resources */,
 				96BA86A8172F3E74001E6542 /* Icon.png in Resources */,
 				96BA86A9172F3E74001E6542 /* Icon@2x.png in Resources */,
@@ -1401,7 +1370,6 @@
 				96BA86AB172F3E74001E6542 /* Default-568h@2x.png in Resources */,
 				96BA86AC172F3E74001E6542 /* Default.png in Resources */,
 				96BA86AD172F3E74001E6542 /* Default@2x.png in Resources */,
-				96BA86AE172F3E74001E6542 /* InfoPlist.strings in Resources */,
 				96BA86AF172F3E74001E6542 /* Scrumptious.strings in Resources */,
 				96BA86B0172F3E74001E6542 /* SCViewController.xib in Resources */,
 				96BA86B1172F3E74001E6542 /* action-eating.png in Resources */,
@@ -1411,24 +1379,20 @@
 				96BA86B5172F3E74001E6542 /* facebook.png in Resources */,
 				96BA86B9172F3E74001E6542 /* SCLoginViewController.xib in Resources */,
 				96BA86BB172F3E74001E6542 /* SCPhotoViewController.xib in Resources */,
-				96BA86BC172F3E74001E6542 /* scrumptious-Info.plist in Resources */,
 				96BA86BE172F3E74001E6542 /* ReadMe.txt in Resources */,
 				96BA86BF172F3E74001E6542 /* Default-568h@2x.png in Resources */,
 				96BA86C0172F3E74001E6542 /* Default.png in Resources */,
 				96BA86C1172F3E74001E6542 /* Default@2x.png in Resources */,
-				96BA86C2172F3E74001E6542 /* InfoPlist.strings in Resources */,
 				96BA86C3172F3E74001E6542 /* SLViewController_iPad.xib in Resources */,
 				96BA86C4172F3E74001E6542 /* SLViewController_iPhone.xib in Resources */,
 				96BA86C5172F3E74001E6542 /* Icon-72.png in Resources */,
 				96BA86C6172F3E74001E6542 /* Icon-72@2x.png in Resources */,
 				96BA86C7172F3E74001E6542 /* Icon.png in Resources */,
 				96BA86C8172F3E74001E6542 /* Icon@2x.png in Resources */,
-				96BA86CA172F3E74001E6542 /* SessionLoginSample-Info.plist in Resources */,
 				96BA86CD172F3E74001E6542 /* ReadMe.txt in Resources */,
 				96BA86CE172F3E74001E6542 /* Default-568h@2x.png in Resources */,
 				96BA86CF172F3E74001E6542 /* Default.png in Resources */,
 				96BA86D0172F3E74001E6542 /* Default@2x.png in Resources */,
-				96BA86D1172F3E74001E6542 /* InfoPlist.strings in Resources */,
 				96BA86D2172F3E74001E6542 /* first.png in Resources */,
 				96BA86D3172F3E74001E6542 /* first@2x.png in Resources */,
 				96BA86D4172F3E74001E6542 /* Icon-72.png in Resources */,
@@ -1441,10 +1405,8 @@
 				96BA86DF172F3E74001E6542 /* SUSettingsViewController_iPhone.xib in Resources */,
 				96BA86E2172F3E74001E6542 /* SUUsingViewController_iPad.xib in Resources */,
 				96BA86E3172F3E74001E6542 /* SUUsingViewController_iPhone.xib in Resources */,
-				96BA86E4172F3E74001E6542 /* SwitchUserSample-Info.plist in Resources */,
 				96BA870B172F3EA8001E6542 /* FacebookSDKResources.bundle in Resources */,
 				96BA870C172F3EA8001E6542 /* FBUserSettingsViewResources.bundle in Resources */,
-				96BA870D172F3EA8001E6542 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
