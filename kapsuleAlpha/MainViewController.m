@@ -32,9 +32,9 @@
 -(void)showKapsulePage{
     AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
     
-    NSLog(@"@%",[NSString stringWithFormat:@"http://empty-dusk-3091.herokuapp.com/kapsule_messages.mobile?auth_token=%@",[appDelegate kapsule_token]]);
+    NSLog(@"@%",[NSString stringWithFormat:@"http://kapsuleapp.com/kapsule_messages.mobile?auth_token=%@",[appDelegate kapsule_token]]);
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://empty-dusk-3091.herokuapp.com/kapsule_messages.mobile?auth_token=%@",[appDelegate kapsule_token]]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://kapsuleapp.com/kapsule_messages.mobile?auth_token=%@",[appDelegate kapsule_token]]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView setScalesPageToFit:YES];
     [webView loadRequest:request];

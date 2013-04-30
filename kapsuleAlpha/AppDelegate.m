@@ -198,7 +198,7 @@
 
 - (void)doKapsuleLogin
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://empty-dusk-3091.herokuapp.com/api/v1/tokens.json"]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://kapsuleapp.com/api/v1/tokens.json"]];
     
     NSDictionary* params = [NSDictionary dictionaryWithObjectsAndKeys:
                                                    [self FBID], @"facebook_id",
@@ -236,7 +236,7 @@
 }
 
 - (void)getKapsules: (CLLocationDegrees) latitude :(CLLocationDegrees) longitude{
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://empty-dusk-3091.herokuapp.com/kapsule_messages/find.json?lat=%f&lon=%f&auth_token=%@",latitude,longitude,kapsule_token]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://kapsuleapp.com/kapsule_messages/find.json?lat=%f&lon=%f&auth_token=%@",latitude,longitude,kapsule_token]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
                                                            cachePolicy:NSURLRequestReloadIgnoringCacheData
                                                        timeoutInterval:10];
