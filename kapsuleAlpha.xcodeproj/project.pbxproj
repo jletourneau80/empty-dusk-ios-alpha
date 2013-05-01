@@ -1785,6 +1785,8 @@
 		42AF26AA16B9928F0072937A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jason Letourneau (9B62T2ZHVW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jason Letourneau (9B62T2ZHVW)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
@@ -1797,6 +1799,8 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "72E3EAF7-F1E1-4951-8681-3F2E0959E19E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "72E3EAF7-F1E1-4951-8681-3F2E0959E19E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1804,7 +1808,8 @@
 		42AF26AB16B9928F0072937A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason Letourneau (F46775L8R2)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jason Letourneau (9B62T2ZHVW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jason Letourneau (9B62T2ZHVW)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
@@ -1817,7 +1822,8 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "238E5969-1F30-4691-8DE9-B89BF87D5D68";
+				PROVISIONING_PROFILE = "72E3EAF7-F1E1-4951-8681-3F2E0959E19E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "72E3EAF7-F1E1-4951-8681-3F2E0959E19E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
